@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\mylab\MerchantManager\src\api\Andromeda.MerchantManager" t="IncludeFlat">
+      <e p="Andromeda.MerchantManager.Api" t="IncludeRecursive">
+        <e p="Andromeda.MerchantManager.Api.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="MerchantsController.cs" t="Include" />
+        </e>
+        <e p="Exceptions" t="Include">
+          <e p="MerchantDeleteException.cs" t="Include" />
+          <e p="MerchantGetException.cs" t="Include" />
+          <e p="MerchantSaveException.cs" t="Include" />
+          <e p="MerchantUpdateException.cs" t="Include" />
+        </e>
+        <e p="GraphQL" t="Include">
+          <e p="MerchantMutation.cs" t="Include" />
+          <e p="MerchantQuery.cs" t="Include" />
+          <e p="MerchantsSchema.cs" t="Include" />
+          <e p="Types" t="Include">
+            <e p="CurrencyInputType.cs" t="Include" />
+            <e p="CurrencyType.cs" t="Include" />
+            <e p="ImageType.cs" t="Include" />
+            <e p="MerchantInputType.cs" t="Include" />
+            <e p="MerchantType.cs" t="Include" />
+            <e p="StatusType.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Infrastructure" t="Include">
+          <e p="Profiles" t="Include">
+            <e p="ModelEntityMappings.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Models" t="Include">
+          <e p="Currency.cs" t="Include" />
+          <e p="Image.cs" t="Include" />
+          <e p="Merchant.cs" t="Include" />
+          <e p="Status.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Andromeda.MerchantManager.Api.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="FileStorageService.cs" t="Include" />
+          <e p="IMerchantService.cs" t="Include" />
+          <e p="IStorageService.cs" t="Include" />
+          <e p="MerchantService.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="Andromeda.MerchantManager.Data" t="IncludeRecursive">
+        <e p="Andromeda.MerchantManager.Data.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Configurations" t="Include">
+          <e p="MongoDbOptions.cs" t="Include" />
+        </e>
+        <e p="Entities" t="Include">
+          <e p="CurrencyEntity.cs" t="Include" />
+          <e p="MerchantEntity.cs" t="Include" />
+        </e>
+        <e p="IMongoContext.cs" t="Include" />
+        <e p="IUnitOfWork.cs" t="Include" />
+        <e p="MongoContext.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Andromeda.MerchantManager.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="BaseRepository.cs" t="Include" />
+          <e p="IMerchantRepository.cs" t="Include" />
+          <e p="IRepository.cs" t="Include" />
+          <e p="MerchantRepository.cs" t="Include" />
+        </e>
+        <e p="Status.cs" t="Include" />
+        <e p="UnitOfWork.cs" t="Include" />
+      </e>
+      <e p="Andromeda.MerchantManager.sln" t="IncludeFlat" />
+      <e p="Andromeda.MerchantManager.Tests" t="IncludeRecursive">
+        <e p="Andromeda.MerchantManager.Tests.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Andromeda.MerchantManager.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Profiles" t="Include">
+          <e p="ModelEntityMappingsTests.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="MerchantServiceTests.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\inam.gull\.nuget\packages\microsoft.net.test.sdk\16.2.0\build\netcoreapp1.0" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\inam.gull\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="C:\Users\inam.gull\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="C:\Users\inam.gull\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="C:\Users\inam.gull\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\inam.gull\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\inam.gull\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Andromeda.MerchantManager.-1355204307.00" t="ExcludeRecursive" />
+  </component>
+</project>
