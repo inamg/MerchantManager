@@ -7,7 +7,7 @@ using AutoMapper;
 using GraphQL;
 using GraphQL.Server;
 using GraphQL.Server.Ui.Playground;
-using GraphQL.Types;
+using Andromeda.MerchantManager.Data.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
@@ -34,8 +34,7 @@ namespace Andromeda.MerchantManager.Api
             services.AddScoped<IStorageService, FileStorageService>();
 
             services.Configure<MongoDbOptions>(Configuration.GetSection("MongoSettings"));
-            services.AddTransient<IMongoContext, MongoContext>();
-            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddDataServices();
 
             services.AddScoped<IDependencyResolver>(x =>
                 new FuncDependencyResolver(x.GetRequiredService));
