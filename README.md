@@ -32,6 +32,7 @@ Apollo
 Unit of work with repository pattern is used to access data from mongoDb. APIs are exposed using graphql and rest api.
 
 ### How to Run
+got to the directory /src/api/Andromeda.MerchantManager
 docker-compose build </br>
 docker-compose up
 
