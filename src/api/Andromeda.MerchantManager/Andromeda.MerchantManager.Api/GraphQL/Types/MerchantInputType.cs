@@ -14,6 +14,7 @@ namespace Andromeda.MerchantManager.Api.GraphQL.Types
             Field(name: "File", type: typeof(UploadGraphType));
             Field(x => x.Status, type: typeof(StatusType)).Description("Status Merchant.");
             Field(x => x.Currency, type: typeof(CurrencyInputType)).Description("Currency of the merchant");
+            Field(x => x.Url);
         }
     }
 }

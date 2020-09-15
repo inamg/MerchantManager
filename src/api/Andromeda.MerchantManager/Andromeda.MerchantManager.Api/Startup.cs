@@ -19,6 +19,8 @@ namespace Andromeda.MerchantManager.Api
 {
     public class Startup
     {
+        private readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -29,6 +31,17 @@ namespace Andromeda.MerchantManager.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
+            
             services.AddControllers();
             services.AddScoped<IMerchantService, MerchantService>();
             services.AddScoped<IStorageService, FileStorageService>();
@@ -57,9 +70,8 @@ namespace Andromeda.MerchantManager.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseHttpsRedirection();
-
+            app.UseCors(MyAllowSpecificOrigins);
+            
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions()
             {
                 Path = "/ui"
@@ -69,7 +81,6 @@ namespace Andromeda.MerchantManager.Api
             app.UseGraphQL<MerchantsSchema>();
 
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
