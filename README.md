@@ -35,7 +35,7 @@ Unit of work with repository pattern is used to access data from mongoDb. APIs a
 got to the directory /src/api/Andromeda.MerchantManager </br>
 docker-compose build </br>
 docker-compose up </br>
-instructions for running the app can be find under the app folder
+instructions for running the app can be found under the app folder
 
 
 
